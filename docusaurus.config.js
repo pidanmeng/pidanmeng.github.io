@@ -45,6 +45,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
+        hideOnScroll: true,
         title: 'My Site',
         logo: {
           alt: 'My Site Logo',
@@ -52,10 +53,21 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            type: 'dropdown',
             position: 'left',
             label: 'Tutorial',
+            items: [
+              {
+                type: 'doc',
+                docId: 'intro',
+                label: 'Tutorial',
+              },
+              {to: '/blog', label: 'Blog'},
+              {
+                href: 'https://github.com/facebook/docusaurus',
+                label: 'GitHub',
+              },
+            ],
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -110,6 +122,40 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
+      socials: [
+        {
+          url: 'https://www.youtube.com/c/iotafoundation',
+          backgroundColor: 'var(--ifm-color-gray-900)',
+        },
+        {
+          url: 'https://www.github.com/iotaledger/',
+          backgroundColor: '#2C3850',
+        },
+        {
+          url: 'https://discord.iota.org/',
+          backgroundColor: '#4B576F',
+        },
+        {
+          url: 'https://www.twitter.com/iota/',
+          backgroundColor: '#6A768E',
+        },
+        {
+          url: 'https://www.reddit.com/r/iota/',
+          backgroundColor: '#7D89A1',
+        },
+        {
+          url: 'https://www.linkedin.com/company/iotafoundation/',
+          backgroundColor: '#8995AD',
+        },
+        {
+          url: 'https://www.instagram.com/iotafoundation/',
+          backgroundColor: '#99A5BD',
+        },
+        {
+          url: 'https://www.facebook.com/TheIOTAFoundation/',
+          backgroundColor: '#BAC6DE',
+        },
+      ],
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
