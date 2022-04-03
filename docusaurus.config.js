@@ -44,24 +44,8 @@ const config = {
     [
       '@jlvandenhout/docusaurus-plugin-docs-editor',
       {
-        docs: {
-          // The path to the docs section in your repository
-          path: '',
-          // The username that owns the docs, defaults to siteConfig.organizationName
-          owner: 'pidanmeng',
-          // The repository that contains the docs, defaults to siteConfig.projectName
-          repo: 'pidanmeng.github.io',
-        },
-        // GitHub OAuth Application settings
-        github: {
-          // REQUIRED - The Client ID you got from the GitHub OAuth App setup
-          clientId: '3864b96319a29719ff7f',
-          // REQUIRED - The plugin will append the authorization code to this URL
-          tokenUrl:
-            'https://pidanmeng.openode.dev/authenticate',
-          // The request method to use (GET or POST), defaults to GET
-          method: 'GET',
-        },
+        authorizationClientId: '3864b96319a29719ff7f',
+        authorizationTokenUrl: 'https://pidanmeng.openode.dev/authenticate',
       },
     ],
   ],
