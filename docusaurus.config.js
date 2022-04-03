@@ -60,7 +60,7 @@ const config = {
           tokenUrl:
             'https://github.com/login',
           // The request method to use (GET or POST), defaults to GET
-          method: 'POST',
+          method: 'GET',
         },
       },
     ],
