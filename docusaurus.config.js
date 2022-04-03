@@ -58,7 +58,7 @@ const config = {
           clientId: '3864b96319a29719ff7f',
           // REQUIRED - The plugin will append the authorization code to this URL
           tokenUrl:
-            'https://github.com/login',
+            'https://pidanmeng.openode.dev/authenticate',
           // The request method to use (GET or POST), defaults to GET
           method: 'GET',
         },
