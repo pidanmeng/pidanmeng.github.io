@@ -46,7 +46,7 @@ const config = {
       {
         docs: {
           // The path to the docs section in your repository
-          path: '/',
+          path: '',
           // The username that owns the docs, defaults to siteConfig.organizationName
           owner: 'pidanmeng',
           // The repository that contains the docs, defaults to siteConfig.projectName
