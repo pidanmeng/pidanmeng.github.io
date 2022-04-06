@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const isDev = process.env.NODE_ENV === 'development';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -24,6 +25,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: 'docs',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -55,10 +58,10 @@ const config = {
         // GitHub OAuth Application settings
         github: {
           // REQUIRED - The Client ID you got from the GitHub OAuth App setup
-          clientId: '3864b96319a29719ff7f',
+          clientId: isDev ? '89d036b3c35f84cc14bf' : '3864b96319a29719ff7f',
           // REQUIRED - The plugin will append the authorization code to this URL
           tokenUrl:
-            'https://pidanmeng.openode.dev/authenticate',
+            'https://pidanmeng.openode.dev/authenticateLocal',
           // The request method to use (GET or POST), defaults to GET
           method: 'GET',
         },
