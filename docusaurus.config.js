@@ -60,7 +60,7 @@ const config = {
           // REQUIRED - The Client ID you got from the GitHub OAuth App setup
           clientId: isDev ? '89d036b3c35f84cc14bf' : '3864b96319a29719ff7f',
           // REQUIRED - The plugin will append the authorization code to this URL
-          tokenUrl: isDev ?  'https://pidanmeng.openode.dev/authenticateLocal' : 'https://pidanmeng.openode.dev/authenticate',
+          tokenUrl: isDev ?  'https://vercel-gatekeeper-pidanmeng.vercel.app/api/authenticateLocal' : 'https://vercel-gatekeeper-pidanmeng.vercel.app/api/authenticate',
           // The request method to use (GET or POST), defaults to GET
           method: 'GET',
         },
