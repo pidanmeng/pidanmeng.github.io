@@ -1,8 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import lightCodeTheme from 'prism-react-renderer/themes/github';
+import darkCodeTheme from 'prism-react-renderer/themes/dracula';
+// eslint-disable-next-line no-undef
 const isDev = process.env.NODE_ENV === 'development';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -27,6 +28,7 @@ const config = {
         docs: {
           path: 'docs',
           routeBasePath: '/',
+          // eslint-disable-next-line no-undef
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -38,6 +40,7 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
+          // eslint-disable-next-line no-undef
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
@@ -103,6 +106,12 @@ const config = {
             position: 'right',
           },
         ],
+      },
+      
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
       footer: {
         style: 'dark',
@@ -190,4 +199,4 @@ const config = {
     }),
 };
 
-module.exports = config;
+export default config;
