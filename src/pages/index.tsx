@@ -2,6 +2,7 @@ import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import WebSSH from './components/WebSSH';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -10,7 +11,11 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <WebSSH />
+      <BrowserOnly>
+        {() => (
+          <WebSSH />
+        )}
+      </BrowserOnly>
     </Layout>
   );
 }
