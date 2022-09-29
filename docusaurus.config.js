@@ -78,12 +78,13 @@ const config = {
     ({
       navbar: {
         hideOnScroll: true,
-        title: 'My Site',
+        title: '皮蛋萌',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Logo',
+          src: 'img/cheemsLogo.png',
         },
         items: [
+          {to: '/', label: '首页', position: 'left'},
           {
             type: 'dropdown',
             position: 'left',

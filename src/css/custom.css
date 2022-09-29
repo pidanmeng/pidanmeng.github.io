@@ -1749,7 +1749,7 @@ hr {
 }
 
 .footer--dark {
-  --ifm-footer-background-color: #303846;
+  --ifm-footer-background-color: #393b38;
   --ifm-footer-color: var(--ifm-footer-link-color);
   --ifm-footer-link-color: var(--ifm-color-secondary);
   --ifm-footer-title-color: var(--ifm-color-white)
@@ -1815,7 +1815,7 @@ hr {
 }
 
 .hero--dark {
-  --ifm-hero-background-color: #303846;
+  --ifm-hero-background-color: #393b38;
   --ifm-hero-text-color: var(--ifm-color-white)
 }
 
@@ -1969,7 +1969,9 @@ hr {
 .navbar__title {
   flex: 1 1 auto;
   overflow: hidden;
-  text-overflow: ellipsis
+  text-overflow: ellipsis;
+  font-family: 'pixels';
+  font-weight: normal;
 }
 
 .navbar__toggle {
@@ -2411,7 +2413,7 @@ html[data-theme=dark] {
 
 @font-face {
   font-display: swap;
-  font-family: Metropolis Semi Bold;
+  font-family: pixels;
   font-style: normal;
   font-weight: 400;
   src: url(https://webassets.iota.org/fonts/metropolis/Metropolis-SemiBold.woff2?v=11) format("woff2"),url(https://webassets.iota.org/fonts/metropolis/Metropolis-SemiBold.woff?v=11) format("woff")
@@ -2444,7 +2446,7 @@ html[data-theme=dark] {
 }
 
 :root {
-  --ifm-color-primary: #369fab;
+  --ifm-color-primary: #fccf31;
   --ifm-color-success: #36ab88;
   --ifm-color-info: #368fab;
   --ifm-color-warning: #aba336;
@@ -2457,9 +2459,9 @@ html[data-theme=dark] {
   --ifm-color-gray-500: #8f9ebc;
   --ifm-color-gray-600: #6c7993;
   --ifm-color-gray-700: #435270;
-  --ifm-color-gray-800: #293856;
-  --ifm-color-gray-900: #111f3b;
-  --ifm-color-gray-1000: #0a1429;
+  --ifm-color-gray-800: #2f302e;
+  --ifm-color-gray-900: #191a18;
+  --ifm-color-gray-1000: #2D2E2C;
   --ifm-background-color: var(--ifm-color-emphasis-0);
   --ifm-background-surface-color: var(--ifm-color-emphasis-0);
   --ifm-card-background-color: var(--ifm-color-emphasis-0);
@@ -2475,7 +2477,7 @@ html[data-theme=dark] {
   --ifm-global-border-width: 1px;
   --ifm-global-radius: 0.5rem;
   --ifm-heading-color: var(--ifm-color-emphasis-900);
-  --ifm-heading-font-family: "Metropolis Semi Bold",sans-serif;
+  --ifm-heading-font-family: "pixels",sans-serif;
   --ifm-heading-font-weight: var(--ifm-font-weight-normal);
   --ifm-hero-background-color: var(--ifm-color-emphasis-100);
   --ifm-hover-overlay: var(--ifm-color-emphasis-100);
@@ -2644,7 +2646,8 @@ hr {
 }
 
 .dropdown__menu--mega .link__label {
-  font-family: Metropolis Semi Bold,sans-serif
+  font-family: pixels,sans-serif;
+  font-weight: normal;
 }
 
 .card {
@@ -2753,7 +2756,8 @@ article .card {
 }
 
 .navbar__item {
-  font-family: Metropolis Semi Bold;
+  font-family: pixels;
+  font-weight: normal;
   line-height: .9rem;
   font-size: .9rem;
   letter-spacing: 1px
