@@ -8,7 +8,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // eslint-disable-next-line no-undef
 const isDev = process.env.NODE_ENV === 'development';
 
-/** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'pidanMoe Blog',
   tagline: 'Dinosaurs are cool',
