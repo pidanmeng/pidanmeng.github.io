@@ -29,19 +29,15 @@ const config = {
         docs: {
           path: 'docs',
           routeBasePath: '/',
-          // eslint-disable-next-line no-undef
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/pidanmeng/pidanmeng.github.io',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/pidanmeng/pidanmeng.github.io',
         },
         theme: {
-          // eslint-disable-next-line no-undef
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
@@ -64,7 +60,7 @@ const config = {
           // REQUIRED - The Client ID you got from the GitHub OAuth App setup
           clientId: isDev ? '89d036b3c35f84cc14bf' : '3864b96319a29719ff7f',
           // REQUIRED - The plugin will append the authorization code to this URL
-          tokenUrl: isDev ?  'https://vercel-gatekeeper-pidanmeng.vercel.app/api/authenticateLocal' : 'https://vercel-gatekeeper-pidanmeng.vercel.app/api/authenticate',
+          tokenUrl: isDev ? 'https://vercel-gatekeeper-pidanmeng.vercel.app/api/authenticateLocal' : 'https://vercel-gatekeeper-pidanmeng.vercel.app/api/authenticate',
           // The request method to use (GET or POST), defaults to GET
           method: 'GET',
         },
@@ -75,6 +71,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      giscus: {
+        repo: 'pidanmeng/pidanmeng.github.io',
+        repoId: 'R_kgDOHFyU_w',
+        category: 'Announcements',
+        categoryId: 'DIC_kwDOHFyU_84CSIFY'
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
       navbar: {
         hideOnScroll: true,
         title: '皮蛋萌',
@@ -83,7 +91,7 @@ const config = {
           src: 'img/cheemsLogo.png',
         },
         items: [
-          {to: '/', label: '首页', position: 'left'},
+          { to: '/', label: '首页', position: 'left' },
           {
             type: 'dropdown',
             position: 'left',
@@ -94,14 +102,14 @@ const config = {
                 docId: 'intro',
                 label: 'Tutorial',
               },
-              {to: '/blog', label: 'Blog'},
+              { to: '/blog', label: 'Blog' },
               {
                 href: 'https://github.com/facebook/docusaurus',
                 label: 'GitHub',
               },
             ],
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -109,7 +117,7 @@ const config = {
           },
         ],
       },
-      
+
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
