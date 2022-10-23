@@ -1,5 +1,5 @@
 {
-  "index_name": "blog",
+  "index_name": "pidanmeng.github.io",
   "start_urls": ["https://pidanmeng.github.io"],
   "sitemap_urls": ["https://pidanmeng.github.io/sitemap.xml"],
   "selectors": {
