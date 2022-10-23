@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpidan_moe_blog=self.webpackChunkpidan_moe_blog||[]).push([[742],{150:function(e){e.exports=JSON.parse('{"docs":{"path":"docs","owner":"pidanmeng","repo":"pidanmeng.github.io"},"github":{"clientId":"3864b96319a29719ff7f","tokenUrl":"https://vercel-gatekeeper-pidanmeng.vercel.app/api/authenticate","method":"GET"},"id":"default"}')}}]);
