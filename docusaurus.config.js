@@ -71,6 +71,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        appId: 'GAK9JV1UWG',
+        apiKey: '4ff3514be535df501182316af3a2a25c',
+        indexName: 'pidanmeng.github.io',
+      },
       giscus: {
         repo: 'pidanmeng/pidanmeng.github.io',
         repoId: 'R_kgDOHFyU_w',
