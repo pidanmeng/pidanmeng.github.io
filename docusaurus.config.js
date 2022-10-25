@@ -96,21 +96,27 @@ const config = {
           src: 'img/cheemsLogo.png',
         },
         items: [
-          { to: '/', label: '首页', position: 'left' },
           {
             type: 'dropdown',
             position: 'left',
-            label: 'Tutorial',
+            label: '技术沉淀',
             items: [
               {
-                type: 'doc',
-                docId: 'intro',
-                label: 'Tutorial',
-              },
-              { to: '/blog', label: 'Blog' },
-              {
-                href: 'https://github.com/facebook/docusaurus',
-                label: 'GitHub',
+                type: 'docSidebar',
+                sidebarId: 'Vim',
+                label: 'Vim',
+              }, {
+                type: 'docSidebar',
+                sidebarId: 'Vue',
+                label: 'Vue源码学习笔记',
+              }, {
+                type: 'docSidebar',
+                sidebarId: 'React',
+                label: 'React源码学习笔记',
+              }, {
+                type: 'docSidebar',
+                sidebarId: 'TDD',
+                label: '测试驱动开发(TDD)',
               },
             ],
           },
