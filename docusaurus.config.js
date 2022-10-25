@@ -103,8 +103,8 @@ const config = {
             items: [
               {
                 type: 'docSidebar',
-                sidebarId: 'Vim',
-                label: 'Vim',
+                sidebarId: 'IDE',
+                label: 'IDE',
               }, {
                 type: 'docSidebar',
                 sidebarId: 'Vue',
@@ -117,7 +117,16 @@ const config = {
                 type: 'docSidebar',
                 sidebarId: 'TDD',
                 label: '测试驱动开发(TDD)',
+              }, {
+                type: 'docSidebar',
+                sidebarId: 'DesignPattern',
+                label: '设计模式',
+              }, {
+                type: 'docSidebar',
+                sidebarId: 'Blog',
+                label: '博客搭建相关',
               },
+
             ],
           },
           { to: '/blog', label: 'Blog', position: 'left' },

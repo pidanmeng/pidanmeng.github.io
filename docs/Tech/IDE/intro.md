@@ -1,4 +1,4 @@
 ---
 sidebar_position: 0
-sidebar_label: 介绍
+sidebar_label: 导语
 ---
