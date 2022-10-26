@@ -118,3 +118,12 @@ Coding过程中，我有时会使用到分屏功能，在Vim中，分屏之间�
 于我个人而言，相较于VSCode-Vim无法安装Vim插件的问题，这个问题更加难以接受，两相取舍之下，我最终选择了前者
 
 有些选择并不存在标准答案，只是见仁见智，本篇博文仅提供思路。
+
+## 一些学习资料
+
+- [NeoVim插件](https://neovimcraft.com/)
+- [reddit社区](https://www.reddit.com/r/neovim/)
+- [Vim菜鸟教程](https://www.runoob.com/linux/linux-vim.html)
+- [掘进Vim社区](https://juejin.cn/tag/VIM)
+
+有其他资料也欢迎补充在评论区
