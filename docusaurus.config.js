@@ -44,6 +44,7 @@ const config = {
     ],
   ],
   plugins: [
+    require.resolve('docusaurus-plugin-image-zoom'),
     [
       '@jlvandenhout/docusaurus-plugin-docs-editor',
       {
@@ -137,7 +138,6 @@ const config = {
           },
         ],
       },
-
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
@@ -222,10 +222,13 @@ const config = {
           backgroundColor: '#BAC6DE',
         },
       ],
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        background: {
+          dark: '#22272edd'
+        },
+        config: {}
+      }
     }),
 };
 
