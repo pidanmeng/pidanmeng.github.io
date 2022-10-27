@@ -125,5 +125,6 @@ Coding过程中，我有时会使用到分屏功能，在Vim中，分屏之间�
 - [reddit社区](https://www.reddit.com/r/neovim/)
 - [Vim菜鸟教程](https://www.runoob.com/linux/linux-vim.html)
 - [掘进Vim社区](https://juejin.cn/tag/VIM)
+- [github topic](https://github.com/topics/vim)
 
 有其他资料也欢迎补充在评论区
