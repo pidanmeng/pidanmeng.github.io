@@ -115,3 +115,21 @@ div[class^="codeBlockTitle"] {
   font-size: .9rem;
   letter-spacing: 1px
 }
+
+/* iframe */
+.iframe-container {
+  padding-top: 56.25%;
+  position: relative;
+}
+.iframe-container iframe {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+}
+
+/* image zoom */
+.medium-zoom-overlay {
+    backdrop-filter: blur(4px);
+}
