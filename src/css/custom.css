@@ -39,7 +39,6 @@
   --ifm-color-gray-900: #444c56;
   --ifm-color-gray-1000: #22272e;
   --ifm-color-gray-2000: #1c2128;
-  --ifm-font-family-base: Inter, sans-serif;
   --ifm-menu-color: var(--ifm-color-emphasis-600);
   --ifm-menu-color-active: var(--ifm-color-emphasis-1000);
   --ifm-navbar-item-padding-horizontal: 1.5rem;
