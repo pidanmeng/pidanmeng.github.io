@@ -228,6 +228,9 @@ const config = {
           dark: '#22272edd'
         },
         config: {}
+      },
+      prism: {
+        additionalLanguages: ['vim'],
       }
     }),
 };

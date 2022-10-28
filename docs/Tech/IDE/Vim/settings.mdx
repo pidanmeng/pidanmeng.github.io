@@ -59,3 +59,30 @@ sidebar_label: vim相关设置
 同时，[VSCodeVim](https://github.com/VSCodeVim/Vim)还提供了一个入口，让你可以像配置[`.vimrc`](https://github.com/VSCodeVim/Vim#vimrc-support)一样配置VSCodeVim
 
 在后续的章节中，我将列举一些VSCode配合Vim插件进行设置的案例，用以抛砖引玉
+
+## 使用GitHub管理配置文件
+
+:::info 信息
+在后续章节的设置中，会涉及到三个文件的改动，不如我们使用GitHub对其做版本管理
+
+- `settings.json` - 默认存放在`%AppData%\Code\User`，VSCode设置相关
+- `keybindings.json` - 默认存放在`%AppData%\Code\User`，VSCode快捷键相关
+- `.vimrc` - 默认存放在`%HOMEPATH%`，vim设置相关
+
+:::
+
+我们发现，我们需要管理的几个文件分散，且都分布于系统目录下，这时`windows`系统可以使用[Link Shell Extension](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html#contact)在以上目录创建[硬链接](https://baike.baidu.com/item/%E7%A1%AC%E9%93%BE%E6%8E%A5/2088758)
+
+其他系统下也有对应创建硬链接的方式
+
+:::caution 注意
+只能从git项目作为链接源点，分发到配置文件目录，不能把配置文件用硬链收集到git项目，否则git提交会报错
+:::
+
+## 安装插件
+
+![插件](https://files.catbox.moe/aawrth.png)
+
+`multi-command`提供了再VSCode中类似于定义宏的接口，我们可以通过该插件将一个键映射成多个命令
+
+`Which Key`提供了一个可自定义的菜单，使用文档参考[这里](https://vspacecode.github.io/docs/whichkey/)

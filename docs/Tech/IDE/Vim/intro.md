@@ -127,4 +127,6 @@ Coding过程中，我有时会使用到分屏功能，在Vim中，分屏之间�
 - [掘进Vim社区](https://juejin.cn/tag/VIM)
 - [github topic](https://github.com/topics/vim)
 
+很多开发者习惯将他们的 vimrc 放在 Github 上展示（通常放在叫做 "vim-config" 或者 "dotfiles" 的仓库中），可以再github上搜索上述关键词，按star排列，看别人的配置作为参考
+
 有其他资料也欢迎补充在评论区
