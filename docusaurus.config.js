@@ -232,6 +232,23 @@ const config = {
       },
       prism: {
         additionalLanguages: ['vim'],
+        magicComments: [
+          {
+            className: 'code-block-add-line',
+            line: 'add',
+            block: { start: 'add-start', end: 'add-end' }
+          },
+          {
+            className: 'code-block-update-line',
+            line: 'update',
+            block: { start: 'update-start', end: 'update-end' }
+          },
+          {
+            className: 'code-block-remove-line',
+            line: 'remove',
+            block: { start: 'remove-start', end: 'remove-end' }
+          }
+        ]
       }
     }),
 };

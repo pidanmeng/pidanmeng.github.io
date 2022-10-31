@@ -1,14 +1,20 @@
-@import "./font-face.css";
+@import './font-face.css';
 
 .breadcrumbs__item:not(:last-child):after {
   background: var(--ifm-breadcrumb-separator) center;
-  content: " ";
+  content: ' ';
   display: inline-block;
   filter: var(--ifm-breadcrumb-separator-filter);
-  height: calc(var(--ifm-breadcrumb-separator-size)*var(--ifm-breadcrumb-size-multiplier)*var(--ifm-breadcrumb-separator-size-multiplier));
-  margin: 0 .5rem;
-  opacity: .5;
-  width: calc(var(--ifm-breadcrumb-separator-size)*var(--ifm-breadcrumb-size-multiplier)*var(--ifm-breadcrumb-separator-size-multiplier))
+  height: calc(
+    var(--ifm-breadcrumb-separator-size) * var(--ifm-breadcrumb-size-multiplier) *
+      var(--ifm-breadcrumb-separator-size-multiplier)
+  );
+  margin: 0 0.5rem;
+  opacity: 0.5;
+  width: calc(
+    var(--ifm-breadcrumb-separator-size) * var(--ifm-breadcrumb-size-multiplier) *
+      var(--ifm-breadcrumb-separator-size-multiplier)
+  );
 }
 
 /* font-face pixels */
@@ -17,7 +23,10 @@
   font-family: pixels;
   font-style: normal;
   font-weight: 400;
-  src: url(https://webassets.iota.org/fonts/metropolis/Metropolis-SemiBold.woff2?v=11) format("woff2"), url(https://webassets.iota.org/fonts/metropolis/Metropolis-SemiBold.woff?v=11) format("woff")
+  src: url(https://webassets.iota.org/fonts/metropolis/Metropolis-SemiBold.woff2?v=11)
+      format('woff2'),
+    url(https://webassets.iota.org/fonts/metropolis/Metropolis-SemiBold.woff?v=11)
+      format('woff');
 }
 
 /* colors */
@@ -62,7 +71,7 @@ html[data-theme='dark'] {
 }
 
 /* code block */
-div[class^="codeBlockTitle"] {
+div[class^='codeBlockTitle'] {
   background-color: var(--ifm-subtitle-color);
 }
 
@@ -77,23 +86,39 @@ div[class^="codeBlockTitle"] {
 
 .theme-code-block {
   border: solid 1px var(--ifm-border-color);
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .code-block-add-line {
-  background-color: #003100;
-  box-shadow: inset 3px 0 #009400;
+  background-color: #00ff0020;
+  border-left: 3px solid #00ff0080;
+  display: block;
+  margin: 0 calc(var(--ifm-pre-padding) * -1);
+  padding: 0 var(--ifm-pre-padding);
 
   span[class*='codeLineContent'] {
-    box-shadow: inset 3px 0 #009400;
+    box-shadow: inset 3px 0 #00ff00B0;
   }
 }
 .code-block-update-line {
-  background-color: #4d3800;
-  box-shadow: inset 3px 0 #e6a700;
+  background-color: #e6a70020;
+  border-left: 3px solid #e6a700B0;
+  display: block;
+  margin: 0 calc(var(--ifm-pre-padding) * -1);
+  padding: 0 var(--ifm-pre-padding);
 
   span[class*='codeLineContent'] {
-    box-shadow: inset 3px 0 #e6a700;
+    box-shadow: inset 3px 0 #e6a700B0;
+  }
+}
+.code-block-remove-line {
+  background-color: #ff000020;
+  border-left: 3px solid #ff000080;
+  display: block;
+  margin: 0 calc(var(--ifm-pre-padding) * -1);
+  padding: 0 var(--ifm-pre-padding);
+  span[class*='codeLineContent'] {
+    box-shadow: inset 3px 0 #940000;
   }
 }
 
@@ -107,29 +132,29 @@ div[class^="codeBlockTitle"] {
 
 /* scrollbar */
 ::-webkit-scrollbar {
-  width: 6px
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--ifm-scrollbar-track-background-color)
+  background: var(--ifm-scrollbar-track-background-color);
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--ifm-scrollbar-thumb-background-color);
-  border-radius: 12px
+  border-radius: 12px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--ifm-scrollbar-thumb-hover-background-color)
+  background: var(--ifm-scrollbar-thumb-hover-background-color);
 }
 
 /* navbar font-family */
 .navbar__item {
   font-family: pixels;
   font-weight: normal;
-  line-height: .9rem;
-  font-size: .9rem;
-  letter-spacing: 1px
+  line-height: 0.9rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
 }
 
 /* iframe */
@@ -138,18 +163,18 @@ div[class^="codeBlockTitle"] {
   position: relative;
 }
 .iframe-container iframe {
-   position: absolute;
-   height: 100%;
-   width: 100%;
-   top: 0;
-   left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 /* image zoom */
 .medium-zoom-overlay {
-    backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .medium-zoom-image.medium-zoom-image--opened {
-    box-shadow: #00000033 0 0 12px;
+  box-shadow: #00000033 0 0 12px;
 }
