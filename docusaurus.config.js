@@ -38,12 +38,13 @@ const config = {
             'https://github.com/pidanmeng/pidanmeng.github.io',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
         },
       }),
     ],
   ],
   plugins: [
+    'docusaurus-plugin-sass',
     require.resolve('docusaurus-plugin-image-zoom'),
     [
       '@jlvandenhout/docusaurus-plugin-docs-editor',
