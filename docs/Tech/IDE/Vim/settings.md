@@ -71,12 +71,12 @@ sidebar_label: vim相关设置
 
 :::
 
-我们发现，我们需要管理的几个文件分散，且都分布于系统目录下，这时`windows`系统可以使用[Link Shell Extension](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html#contact)在以上目录创建[硬链接](https://baike.baidu.com/item/%E7%A1%AC%E9%93%BE%E6%8E%A5/2088758)
+我们发现，我们需要管理的几个文件分散，且都分布于系统目录下，这时`windows`系统可以使用[Link Shell Extension](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html#contact)在以上目录创建[符号链接](https://dev.to/iggredible/hard-link-vs-symbolic-link-360b)
 
-其他系统下也有对应创建硬链接的方式
+其他系统下也有对应创建符号链接的方式
 
 :::caution 注意
-只能从git项目作为链接源点，分发到配置文件目录，不能把配置文件用硬链收集到git项目，否则git提交会报错
+只能用符号链接，不能用硬链接，否则无法执行git push命令
 :::
 
 ## 安装插件
