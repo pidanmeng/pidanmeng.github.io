@@ -109,16 +109,16 @@ const config = {
                 label: 'IDE',
               }, {
                 type: 'docSidebar',
+                sidebarId: 'FrontendEngineering',
+                label: '前端工程化',
+              }, {
+                type: 'docSidebar',
                 sidebarId: 'Vue',
                 label: 'Vue源码学习笔记',
               }, {
                 type: 'docSidebar',
                 sidebarId: 'React',
                 label: 'React源码学习笔记',
-              }, {
-                type: 'docSidebar',
-                sidebarId: 'TDD',
-                label: '测试驱动开发(TDD)',
               }, {
                 type: 'docSidebar',
                 sidebarId: 'DesignPattern',
