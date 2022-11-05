@@ -6,8 +6,8 @@ sidebar_label: 奇技淫巧
 # 奇技淫巧
 
 :::note 备注
-Vim的学习曲线是在使用中不断遇到问题，然后找到更简化的解决方案。
-本章节会持续更新，记录我在使用Vim的过程中遇到的麻烦和解法。
+Vim 的学习曲线是在使用中不断遇到问题，然后找到更简化的解决方案。
+本章节会持续更新，记录我在使用 Vim 的过程中遇到的麻烦和解法。
 :::
 
 ## 浏览代码
@@ -34,18 +34,52 @@ nmap <Leader>sh :split<CR>
 
 基于 [surround.vim](https://github.com/tpope/vim-surround)，用于处理括号、方括号、引号和 XML 标签等周围字符。
 
-| surround | 说明 |
-| -------------------------- | -------------------------------------------------------- |
-| `ys <motion> <desired>` | 在 `<motion>` 定义的文本周围添加 `desired` 环绕 |
-| `ds <existing>` | 删除`existing`环绕 |
-| `cs <existing> <desired>` | 将 `existing` 环绕更改为 `desired` |
-| `S <desired>` | 在Visual模式下surround|
+| surround                  | 说明                                            |
+| ------------------------- | ----------------------------------------------- |
+| `ys <motion> <desired>`   | 在 `<motion>` 定义的文本周围添加 `desired` 环绕 |
+| `ds <existing>`           | 删除`existing`环绕                              |
+| `cs <existing> <desired>` | 将 `existing` 环绕更改为 `desired`              |
+| `S <desired>`             | 在 Visual 模式下 surround                       |
 
 一些例子：
 
 - `test` 光标在单词前，输入`ysw"`以`"test"`结束
 - `"test"` 光标在引号内，输入 `cs"'` 以 `'test'` 结束
 - `"test"` 光标在引号内，输入 `ds"` 以 `test` 结束
-- `test` Visual模式下，光标选中`test`，输入 `St` 并输入 `123>` 以 `<123>test</123>` 结束
+- `test` Visual 模式下，光标选中`test`，输入 `St` 并输入 `123>` 以 `<123>test</123>` 结束
 
 ![vim-surround](https://files.catbox.moe/1vk8t6.gif)
+
+### 快速选择代码块
+
+使用`Enter`键快速选择代码块
+
+![快速选择代码块](https://files.catbox.moe/e3og2k.gif)
+
+```json title="keybindings.json"
+ [
+	{
+		"key": "enter",
+		"command": "vim.remap",
+		"when": "vim.mode == 'Normal' && !suggestWidgetVisible && !inQuickOpen && editorTextFocus ",
+		"args": {
+			"after": [
+				"v",
+				"a",
+				"f"
+			],
+		}
+	},
+	{
+		"key": "enter",
+		"command": "vim.remap",
+		"when": "vim.mode == 'Visual' && !suggestWidgetVisible && !inQuickOpen && editorTextFocus  ",
+		"args": {
+			"after": [
+				"a",
+				"f"
+			],
+		}
+	},
+ ]
+```

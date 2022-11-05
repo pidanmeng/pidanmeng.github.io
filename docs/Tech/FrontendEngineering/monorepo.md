@@ -43,6 +43,6 @@ Multirepos是最自然的仓库管理方式，各个项目之间互相隔离，�
 
 目前最主流的monorepo管理工具是[`nx`](https://nx.dev/getting-started/intro) [`lerna`](https://lerna.js.org/docs/introduction) 和 [`@microsoft/rush`](https://rushjs.io/zh-cn/pages/intro/welcome/)
 
-在[`mini-vue`](https://github.com/pidanmeng/mini-vue)项目中，我将尝试使用`@microsoft/rush`进行monorepo的管理
+在[`mini-vue`](https://github.com/pidanmeng/mini-vue)项目中，我将尝试使用`turborepo`进行monorepo的管理
 
 ## 踩坑记录
