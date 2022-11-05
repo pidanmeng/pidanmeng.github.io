@@ -28,6 +28,19 @@ nmap <Leader>sv :vsplit<CR>
 nmap <Leader>sh :split<CR>
 ```
 
+### 展示定义悬浮窗
+
+![展示定义悬浮窗](https://files.catbox.moe/ehlryq.gif)
+
+```json title="keybindings.json"
+[
+	{
+		"key": "ctrl+i",
+		"command": "editor.action.showDefinitionPreviewHover"
+	},
+]
+```
+
 ## 编辑代码
 
 ### [使用字符包裹字符串](https://github.com/VSCodeVim/Vim#vim-surround)
