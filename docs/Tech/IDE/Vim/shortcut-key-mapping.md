@@ -390,6 +390,29 @@ VSCode 的查找和替换功能已经十分强大，直接修改 VSCode 的快�
 只需要不停的按 `<Esc>` 最终都会回到普通模式下。
 :::
 
+### 进入终端
+
+使用 WhichKey 插件快速进入终端
+
+```json title="settings.json"
+[
+  // ...
+  "whichkey.bindings": [
+    // ...
+    // add-start
+    {
+      "key": "t",
+      "name": "Terminal",
+      "type": "command",
+      "command": "workbench.action.terminal.toggleTerminal",
+    },
+    // add-end
+    // ...
+  ],
+  // ...
+],
+```
+
 ### 切换到普通模式
 
 一进入 vim 的时候，默认就处于普通模式下。 按键盘左上角的 `Esc` 键，就会从其他任意模式退回到普通模式。 普通模式用来浏览文本。
@@ -409,6 +432,7 @@ VSCode 的查找和替换功能已经十分强大，直接修改 VSCode 的快�
 ### VISUAL BLOCK 模式
 
 按 `ctrl+v` 键，就会从普通模式切换为 VISUAL BLOCK 模式。 处于 VISUAL 模式时，在左下角会显示 `-- VISUAL BLOCK --`。 按 `Esc` 键，回到普通模式。
+
 ### 进入插入模式的几种方式
 
 #### 在光标所在字符前面进入插入模式
