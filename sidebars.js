@@ -6,6 +6,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'VSCode-Vim',
+      collapsed: false,
       link: {
         type: 'generated-index',
         title: 'Vim配置',
@@ -22,6 +23,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'VSC插件',
+      collapsed: false,
       link: {
         type: 'generated-index',
         title: 'VSCode插件',
