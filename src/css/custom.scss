@@ -46,8 +46,8 @@
   --ifm-color-gray-700: #435270;
   --ifm-color-gray-800: #2d333b;
   --ifm-color-gray-900: #444c56;
-  --ifm-color-gray-1000: #22272e;
-  --ifm-color-gray-2000: #1c2128;
+  --ifm-color-gray-1000: #272c35;
+  --ifm-color-gray-2000: #272c35;
   --ifm-menu-color: var(--ifm-color-emphasis-600);
   --ifm-menu-color-active: var(--ifm-color-emphasis-1000);
   --ifm-navbar-item-padding-horizontal: 1.5rem;
@@ -97,18 +97,18 @@ div[class^='codeBlockTitle'] {
   padding: 0 var(--ifm-pre-padding);
 
   span[class*='codeLineContent'] {
-    box-shadow: inset 3px 0 #00ff00B0;
+    box-shadow: inset 3px 0 #00ff00b0;
   }
 }
 .code-block-update-line {
   background-color: #e6a70020;
-  border-left: 3px solid #e6a700B0;
+  border-left: 3px solid #e6a700b0;
   display: block;
   margin: 0 calc(var(--ifm-pre-padding) * -1);
   padding: 0 var(--ifm-pre-padding);
 
   span[class*='codeLineContent'] {
-    box-shadow: inset 3px 0 #e6a700B0;
+    box-shadow: inset 3px 0 #e6a700b0;
   }
 }
 .code-block-remove-line {
@@ -177,4 +177,33 @@ div[class^='codeBlockTitle'] {
 
 .medium-zoom-image.medium-zoom-image--opened {
   box-shadow: #00000033 0 0 12px;
+}
+
+/* navbar */
+nav.navbar::after {
+  left: 0;
+  right: 0;
+  height: 1px;
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  background-color: rgba(0, 0, 0, 0.16);
+  display: block;
+  content: '';
+}
+
+/* footer */
+footer.footer {
+  position: relative;
+  &::before {
+    left: 0;
+    right: 0;
+    height: 1px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.16);
+    display: block;
+    content: '';
+  }
 }

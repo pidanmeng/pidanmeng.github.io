@@ -1,6 +1,6 @@
 const THEME = {
   foreground: '#F8F8F8',
-  background: '#22272e',
+  background: '#272c35',
   selection: '#5DA5D533',
   black: '#1E1E1D',
   brightBlack: '#262625',
