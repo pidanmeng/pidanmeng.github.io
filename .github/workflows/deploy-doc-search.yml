@@ -73,7 +73,7 @@ jobs:
         - name: Async Github Branch To Gitee
           uses: pidanmeng/force-sync-gitee-action@v1.0.1
           with:
-            username: ${{ env.GITEE_USERNAME }}
-            password: ${{ env.GITEE_PASSWORD }}
+            username: ${{ secrets.GITEE_USERNAME }}
+            password: ${{ secrets.GITEE_PASSWORD }}
             repository: 'pidanmoe'
       needs: [deploy]
