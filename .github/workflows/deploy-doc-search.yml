@@ -67,3 +67,13 @@ jobs:
             --env "CONFIG=${CONFIG}" \
             algolia/docsearch-scraper
     needs: [deploy]
+  sync_gitee_pages:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Async Github Branch To Gitee
+          uses: pidanmeng/force-sync-gitee-action@v1.0.1
+          with:
+            username: ${{ env.GITEE_USERNAME }}
+            password: ${{ env.GITEE_PASSWORD }}
+            repository: 'pidanmoe'
+      needs: [deploy]
